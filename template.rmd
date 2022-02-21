@@ -1,0 +1,44 @@
+---
+title: "TITLE"
+author: "F. Borges"
+date: "`r Sys.Date()`"
+output:
+  html_document:
+    code_folding: hide
+    theme: flatly
+    keep_md: yes
+    number_sections: yes
+    toc : yes
+    toc_float : yes
+  word_document: 
+    number_sections: yes
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE) # to hide the code in the final report
+knitr::opts_chunk$set(message = FALSE) # to hide the messages given in the output
+knitr::opts_chunk$set(warning = FALSE) # to hide the warnings
+knitr::opts_chunk$set(dpi = 300)
+```
+# LIBRARIES
+```{r}
+library(tidyverse)
+```
+
+# DATA PREPARATION
+
+
+```{r}
+df <- read.csv2(here::here("data", "REPLACE WITH THE NAME OF CSV FILE"), check.names = F, dec = ".",stringsAsFactors = T)
+```
+
+
+
+# REFERENCES
+```{r}
+sessionInfo()
+```
+
+
